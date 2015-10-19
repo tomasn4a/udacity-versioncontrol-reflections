@@ -1,0 +1,53 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+Using the diff command it was very easy to spot the differences between nearly identical files,
+it would have taken a long time to find these differences manually.
+
+
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+Having multiple versions of the file you are working on lets you esasily go back to any previous design 
+if needed. Also if after changing some things your code stops working, but it was working before, it makes
+it easier to find the bug.
+
+
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, 
+vs having versions automatically saved, like Google Docs does?
+
+The pros are that the different versions all have a purpose or make sense, because they were commited manually
+after significant changes. The big downside is that it is user-error-prone, since it is easy to forget to
+push commits.
+
+
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others,
+like Google Docs, treat each file separately?
+
+It depends on what the system is tracking. For documents, you rarely have inerconected files and so it makes sense
+to track one at a time. For coding, when often files call on other files it is often better to track the changes of 
+multiple files simultaneously.
+
+
+
+How can you use the commands git log and git diff to view the history of files?
+
+The git log command allows you to view a list of the different commits, each with a special ID, date, and comment. 
+You can use two ofthe IDs and the git diff command to view all the changes made between commits.
+
+
+
+How might using version control make you more confident to make changes that could break something?
+
+Since you can always revert to any previous working version of your code, introducing changes that might ruin your code 
+is not a problem anymore.
+
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I'll first upload all my current projects as repositories and start exploring all the options VC has to offer.
+
+
+
