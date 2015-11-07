@@ -1,0 +1,57 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+When you initialize a git repository a hidden folder is created that keeps track of all the changes 
+and commits.
+
+
+
+How is the staging area different from the working directory and the repository? What value 
+do you think it offers?
+
+The staging area is place where you prepare all the material you are going to commit. That way a commit
+remains a logical unit, only commiting what is a logical change.
+
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+To keep one commit per logical change you may sometimes have to commit more than one modified file at
+a time. When you are done making the changes to a file you can add it to the staging area. Once you
+have enough updated files for a logical commit in the staging area you are good!
+
+
+
+What are some situations when branches would be helpful in keeping your history organized? How 
+would branches help?
+
+Branches can help you experiment with things such as a new feature or languages. It doesn't even have to
+be an experiment. If you think of a couple of things at the same time and want to be working on them 
+in paralel you can create a couple of branches and merge them to the master once you are done. Also,
+branches are awesome for coop work.
+
+
+
+How do the diagrams help you visualize the branch structure?
+
+Drawing diagrams helps you keep track of the tree like structure of the project: some commits belong
+to branches that cannot be reached from other branches. Also, some commits are not reachable through
+ANY other commit (in the detached head state).
+
+
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+By merging two branches together you combine the changes done in one branch with the changes done in 
+another branch. It also makes all commits not done in the master branch to be reachable through the
+master. The way we represent it is pretty self explanatory, a branch "branches off", 
+some commits are made on it, and then it merges with another branch.
+
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Git does a pretty good job at merging branches when obvious changes have been made, such as adding
+or removing a line. When it detects a conflict, for example when both branches have two different
+versions of a line of code, git let's you know so that you can resolve the conflict yourself, it 
+does not do it automatically, which, even though it may take more time than if git figured it out
+on its own (somehow), it could potentially cause a lot of trouble.
